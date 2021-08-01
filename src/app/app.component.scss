@@ -1,0 +1,27 @@
+// @use '@material/dialog/mdc-dialog';
+// @use '@material/dialog';
+
+.container {
+  padding: 3%;
+
+  form {
+    width: 100%;
+  }
+
+  .btnContainer {
+
+    .cancel {
+      margin-right: 1rem;
+    }
+  }
+
+  button {
+    width: 100px;
+    float: right;
+  }
+
+  table {
+      margin-top: 5rem;
+  }
+}
+

@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
@@ -83,6 +84,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "codeCoverage": true,
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngTestWork"
+    }
+  },
+  "defaultProject": "ngTestWork",
+  "cli": {
+    "analytics": "0bb65163-33c0-479b-b6fc-2532053a8ca4"
+  }
 }

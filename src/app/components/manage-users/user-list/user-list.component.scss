@@ -1,0 +1,35 @@
+tr th,
+td {
+  padding: 0;
+  vertical-align: middle;
+}
+
+table th{
+  padding: 0.6rem;
+}
+
+table td img {
+  margin: 0.2rem 0;
+}
+
+td span {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+td .avatar {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.container {
+  padding: 1rem
+}
+
+.noDataFound {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  padding-top: 3rem;
+}

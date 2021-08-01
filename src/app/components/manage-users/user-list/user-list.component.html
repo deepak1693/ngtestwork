@@ -1,0 +1,47 @@
+<div class="container">
+  <table class="table table-striped ">
+    <thead>
+      <tr>
+        <th scope="col">S.No.</th>
+        <th scope="col">Image</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngIf="userListArray && userListArray.length; else noDataFound">
+        <tr *ngFor="let item of userListArray;let i = index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>
+            <img class="avatar" [src]="item?.avatar" />
+          </td>
+          <td>
+            {{item?.first_name}}
+          </td>
+          <td>
+            {{item?.last_name}}
+          </td>
+          <td>
+            {{item?.email}}
+          </td>
+          <td>
+            <span>
+              <i class="fa fa-pencil" title="check user info" (click)="editUser(item)" aria-hidden="true"></i>
+            </span>
+            <span>
+              <i class="fa fa-trash" title="delete user" (click)="deleteUser(i, item)" aria-hidden="true"></i>
+            </span>
+          </td>
+          <td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <ng-template #noDataFound>
+    <div class="noDataFound">
+      No Data Found
+    </div>
+  </ng-template>
+</div>

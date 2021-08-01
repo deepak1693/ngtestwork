@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="userData?.avatar" alt="user image loading...">
+    <div class="card-body">
+      <p class="card-text">
+        <span>
+          <h5>Name  </h5>
+        </span>
+        <span class="data"> {{userData?.first_name}} {{userData?.last_name}}</span></p>
+      <p class="card-text">
+        <span>
+          <h5>Email </h5>
+        </span>
+        <span class="data">
+          {{userData?.email}}
+        </span>
+      </p>
+      <a routerLink="/users" class="btn btn-primary">Back to users</a>
+    </div>
+  </div>
+</div>
